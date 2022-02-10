@@ -24,7 +24,7 @@ RUN npm ci --only=production
 
 ENV NODE_ENV=production
 ENV STATIC_FILES_PATH=./public
-ENV API_MOCK=false
+ENV API_MOCK=true
 ENV CORS_ORIGIN=false
 
 ENTRYPOINT ["node", "index"]
